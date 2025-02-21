@@ -12,6 +12,10 @@ export const authOptions: AuthOptions = {
             issuer: process.env.KEYCLOAK_ISSUER
         })
     ],
+    pages: {
+        signIn: 'api/auth/signin',
+        signOut: 'api/auth/signout',
+      },
     session: {
         maxAge: 60 * 30
     },
